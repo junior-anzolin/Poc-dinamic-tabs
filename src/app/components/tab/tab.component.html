@@ -1,0 +1,29 @@
+<div class="h-50">
+  <mat-tab-group class="w-100" dynamicHeight>
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab.label">
+      <app-content [tab]="tab"></app-content>
+    </mat-tab>
+    <mat-tab disabled class="remove-disable-style">
+      <ng-template mat-tab-label>
+        <button mat-icon-button (click)="createTab()">
+          <mat-icon>add_circle</mat-icon>
+        </button>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<div class="h-50">
+  <mat-tab-group class="w-100" dynamicHeight>
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab.label">
+      <app-content [tab]="tab"></app-content>
+    </mat-tab>
+    <mat-tab disabled class="remove-disable-style">
+      <ng-template mat-tab-label>
+        <button mat-icon-button (click)="createTab()">
+          <mat-icon>add_circle</mat-icon>
+        </button>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>

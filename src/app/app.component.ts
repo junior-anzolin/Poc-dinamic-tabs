@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HandleUserComponent } from './components/handle-user/handle-user.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'poc-tabs';
+  component = HandleUserComponent
 }
